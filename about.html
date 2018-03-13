@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0; 
+            
+        }
+        ul.solv{
+             list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            color: aqua;
+            background-color: lightgray;
+            position: fixed;
+           text-align: center;
+            height: 100%;
+             overflow: auto;
+            
+        }
+        ul.solv li a{
+        display: inline-block;
+        color:white;
+        text-align:left;
+        text-decoration: none;
+        padding: 18px 17px;
+        font-size: 20px;
+    
+        }
+        
+        ul.solv li a.active{
+            background-color: aqua;
+            color: brown;
+        }
+        
+        ul.solv li a:hover:not(.active){
+            background-color: aqua;
+        }
+        p{
+            margin-left: 350px;
+            padding: 19px 16px;
+            height: 1000px;
+        }
+        
+        @media screen and (max-width: 900px){
+            ul.solv {
+                width: 100px;
+                height: auto;
+                position: relative;
+            }
+            ul.solv li a{
+                float: left;
+                padding: 15px;
+                
+            }
+           
+        }
+            @media screen and (max-width: 400px){
+                ul.solv li a{
+               text-align: center;
+               float: none;
+                }
+            }
+        
+            
+        
+    </style>
+    </head>
+<body>
+<ul class="solv">
+    
+   
+    
+ <li ><a class="active" href="#">home</a></li>
+    <li><a href="#">home</a></li>
+    <li><a href="#">home</a></li>
+    <li><a href="#">home</a></li>
+    </ul>
+ 
+ 
+
+ 
+</body>
+</html>
